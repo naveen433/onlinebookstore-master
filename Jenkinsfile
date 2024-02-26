@@ -3,8 +3,9 @@ pipeline {
         stages {  
        	    stage("build") {  
            	    steps {  
-                      echo " build successfully"  
                       sh "mvn clean package"
+                      echo " build successfully"  
+                      
               	    }  
          	    } 
         }
